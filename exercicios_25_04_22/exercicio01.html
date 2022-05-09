@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+
+
+<style>
+
+  body{
+      background-color: aquamarine;
+      color: black;
+      font:normal 20pt arial ;
+  }
+</style>
+<body>
+    <p>Este programa faz um script que verifica se uma letra digitada num campo de input é vogal ou consoante</p>
+    <p>Digite uma letra: <input id="char" type="text"><button onclick="check()">Ok</button></p>
+
+    <script>
+        function check(){
+     var letra = document.getElementById("char").value;
+     letra = letra.toLowerCase();
+
+     if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u')
+   alert("Você digitou uma vogal!");
+  else     
+      alert("Você digitou uma consoante!");
+    }
+    </script>
+    
+</body>
+</html>
